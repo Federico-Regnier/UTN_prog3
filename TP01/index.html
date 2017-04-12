@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Alta Empleados</h1>
-<form action="administracion.php" method="POST">
+<form action="administracion.php" method="POST" enctype="multipart/form-data">
 Nombre:<input type="text" name="txtNombre"/><br>
 Apellido:<input type="text" name="txtApellido"/><br>
 DNI:<input type="text" name="txtDni"/><br>
@@ -14,7 +14,8 @@ DNI:<input type="text" name="txtDni"/><br>
 <input type="radio" name="txtSexo" value="F">Femenino<br>
 Legajo:<input type="text" name="txtLegajo"/><br>
 Salario:<input type="text" name="txtSueldo"/><br>
-<input type="submit" value="Enviar"/>
+<input type="file" name="foto"/><br>
+<input type="submit" value="Enviar" name="guardar"/>
 <input type="reset" value="Limpiar"/>
 </form>
 </body>
